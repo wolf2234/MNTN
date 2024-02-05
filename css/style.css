@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+html {
+
+}
+
+body {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Gilroy';
+    background-color: #0b1d26;
+    background-image: url("../img/mountains-summer-sunny.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+
+/* BASE */
+
+.container-wide {
+    margin: 0 auto;
+    width: 1760px;
+    padding: 0 15px;
+}
+
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+
+/* HEADER */
+
+.header {
+    padding-top: 64px;
+}
+
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700px;
+    font-size: 32px;
+}
+
+.nav {
+    font-weight: 700;
+    font-style: 18px;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav li + li {
+    margin-left: 40px;
+}
+.nav a:hover {
+    color: #fbd784;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in; 
+    /* transition: плавно менялся цвет; */
+}
+
+.account {
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in;
+}
+
+.account:hover {
+    color: #fbd784;
+}
+
+.nav-wrapper {
+    margin-bottom: 198px;
+}
+
+/* HERO */
+
+.hero {
+    
+}
+.hero-category {
+    
+}
+.hero-heading {
+    
+}
+.hero-scroll {
+    
+}
