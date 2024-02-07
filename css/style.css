@@ -158,11 +158,12 @@ body {
     content: "";
     position: absolute;
     right: 0;
-    top: 30%;
+    top: 20%;
     width: 28px;
     height: 24px;
     left: 105px;
     background-image: url('/img/iconmonstr-arrow-down-thin.svg');
+    background-repeat: no-repeat;
     transform: translate(-50%);
 }
 
@@ -177,7 +178,16 @@ body {
 }
 
 
+.main {
+    margin-top: -200px;
+}
+
+.article:nth-child(even){
+    flex-direction: row-reverse;
+}
+
 .article {
+    margin-bottom: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,14 +202,15 @@ body {
 .article-text::before {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -50%;
+    transform: translateY(-50%);
     display: block;
     content: attr(data-number);
     width: 240px;
     height: 240px;
     font-style: normal;
     font-weight: 700;
-    font-style: 240px;
+    font-size: 240px;
     line-height: 1;
     color: rgba(255, 255, 255, 0.1);
 }
@@ -233,13 +244,7 @@ body {
 }
 
 
-.article-text p {
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
-}
+
 
 .article-title {
     margin-bottom: 27px;
@@ -252,14 +257,24 @@ body {
     color: #FFFFFF;
 }
 
+.article-text p {
+    margin-bottom: 27px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
 .article-read-more {
     display: inline-block;
     position: relative;
     padding-right: 40px;
     font-weight: 700;
-    font-style: 18px;
+    font-size: 18px;
     line-height: 1.222;
-    color: #FFFFFF;
+    color: #FBD784;
 }
 
 .article-read-more::after {
@@ -267,18 +282,47 @@ body {
     content: "";
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 10%;
     width: 24px;
-    height: 80px;
-    background-image: url('../img/iconmonstr-arrow-right-thin.svg');
+    height: 25px;
+    background-image: url('/img/iconmonstr-arrow-right-thin.svg');
+    background-repeat: no-repeat;
     transform: translate(-50%);
 }
 
 
-.article-img {
+.article-img img {
+    display: block;
+}
+
+
+/* FOOTER */
+
+
+.footer {
 
 }
 
-.align-center {
+.footer-copyright {
+
+}
+
+.footer-copyright-logo {
+
+}
+
+.footer-copyright-desc {
+
+}
+
+.footer-copyright-terms {
+
+}
+
+.footer-nav {
+
+}
+
+.footer-nav-title {
 
 }
